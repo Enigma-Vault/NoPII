@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-python:
+    name: Lint Python examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install ruff
+          for req in */requirements.txt; do
+            pip install -r "$req"
+          done
+
+      - name: Check syntax and imports
+        run: ruff check --select=E,F,I .
+
+  lint-node:
+    name: Lint Node examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        working-directory: openai-chat-node
+        run: npm install
+
+      - name: Check syntax
+        working-directory: openai-chat-node
+        run: npx tsc --noEmit

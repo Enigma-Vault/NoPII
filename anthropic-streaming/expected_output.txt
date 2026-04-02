@@ -1,0 +1,16 @@
+$ python main.py
+
+Security issues found in this config snippet:
+
+1. AWS Access Key (AKIAIOSFODNN7EXAMPLE) is exposed in plaintext
+2. Stripe live key (sk_live_1234567890abcdefgh) should never be in config files
+3. Slack bot token (xoxb-1234567890-abcdefghij) is exposed
+
+Deployed by Mike Torres (mike.t@startup.io, phone 415-555-0142) on 2024-03-15.
+
+Recommendations: Rotate all exposed credentials immediately and move them to
+a secrets manager.
+
+Note: LLM responses vary between runs. Real PII, API keys, and tokens appear
+in the output even though the LLM only ever saw tokenized placeholders. Output
+streams in real time.

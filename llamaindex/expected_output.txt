@@ -1,0 +1,12 @@
+$ python main.py
+
+Employee Record Summary:
+- Name: David Park
+- Email: d.park@megacorp.io
+- SSN: 345-67-8901
+- Phone: 628-555-0173
+- Department: Engineering
+- Start date: January 2024
+
+Note: LLM responses vary between runs. Real PII appears in the output even
+though the LLM only ever saw tokenized placeholders.

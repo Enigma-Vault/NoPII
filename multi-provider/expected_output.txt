@@ -1,0 +1,25 @@
+$ python main.py
+
+=== OpenAI (GPT-4o) ===
+
+Patient Intake Summary:
+- Patient: Emma Wilson
+- DOB: 07/22/1990
+- SSN: 567-89-0123
+- Email: emma.w@hospital.org
+- Phone: 206-555-0156
+- Emergency contact: James Wilson (206-555-0199)
+
+=== Anthropic (Claude) ===
+
+Patient Intake Form Summary:
+- Name: Emma Wilson (DOB: 07/22/1990)
+- SSN: 567-89-0123
+- Contact: emma.w@hospital.org, 206-555-0156
+- Emergency: James Wilson, 206-555-0199
+
+--- Same PII, same protection, every provider. ---
+
+Note: LLM responses vary between runs. The key thing: the same PII is
+protected identically regardless of which LLM provider processes the request.
+DeepSeek output appears if DEEPSEEK_API_KEY is set.

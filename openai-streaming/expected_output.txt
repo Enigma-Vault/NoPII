@@ -1,0 +1,13 @@
+$ python main.py
+
+Here's a breakdown of the deployment issue:
+
+The application connects to postgresql://admin:s3cret@db.internal:5432/prod
+and uses OpenAI API key sk-proj-ABC123def456ghi789jkl012mno.
+
+Sarah Chen (sarah.chen@company.com) reported the failure after the deploy on
+2024-03-20. Let me help debug the issue...
+
+Note: LLM responses vary between runs. Real PII, credentials, and connection
+strings appear in the output even though the LLM only ever saw tokenized
+placeholders. Output streams in real time.

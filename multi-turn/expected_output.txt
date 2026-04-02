@@ -1,0 +1,25 @@
+$ python main.py
+
+--- Turn 1 ---
+User: Schedule a meeting with John Smith at john.smith@acme.com
+Assistant: I'll schedule a meeting with John Smith. I've noted his email
+as john.smith@acme.com for the calendar invite for next Tuesday.
+
+--- Turn 2 ---
+User: What email did I give you for John?
+Assistant: The email you provided for John Smith is john.smith@acme.com.
+
+--- Turn 3 ---
+User: Also invite Sarah Lee (sarah@acme.com)
+Assistant: I've added Sarah Lee (sarah@acme.com) to the meeting invite
+alongside John Smith for next Tuesday.
+
+--- Turn 4 ---
+User: Send both of them a reminder
+Assistant: I'll send a reminder to both:
+- John Smith at john.smith@acme.com
+- Sarah Lee at sarah@acme.com
+
+Note: LLM responses vary between runs. The key thing: the LLM correctly
+recalls PII from earlier turns (e.g., John's email in Turn 2) because
+deterministic tokenization maps the same PII to the same token every time.

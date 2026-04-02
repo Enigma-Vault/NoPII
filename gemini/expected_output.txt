@@ -1,0 +1,13 @@
+$ python main.py
+
+Insurance Claim Summary:
+- Policyholder: Lisa Wang
+- Email: lisa.wang@email.com
+- SSN: 456-78-9012
+- Phone: 503-555-0187
+- Date filed: 2024-02-20
+- Claim type: Water damage
+- Property: 742 Evergreen Terrace, Portland, OR 97201
+
+Note: LLM responses vary between runs. Real PII appears in the output even
+though the LLM only ever saw tokenized placeholders.

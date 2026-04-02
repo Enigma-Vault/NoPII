@@ -1,0 +1,15 @@
+$ python main.py
+
+Formal translation:
+
+Dear Support Team,
+
+Mr. Mike Thompson has contacted us again regarding his account. He can be
+reached at 408-555-0234 or via email at mike.t@startup.io. He reports that
+the payment from his card ending in 5100 (5105-1051-0510-5100) was not
+processed successfully.
+
+Please investigate and resolve at your earliest convenience.
+
+Note: LLM responses vary between runs. Real PII appears in the output even
+though the LLM only ever saw tokenized placeholders.

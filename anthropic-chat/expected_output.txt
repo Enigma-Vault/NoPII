@@ -1,0 +1,15 @@
+$ python main.py
+
+Dear Maria Garcia,
+
+Thank you for visiting us on January 15, 2024 for your routine checkup.
+We're writing to follow up on your visit.
+
+Your records (DOB: 03/15/1985) have been updated in our system. If you have
+any questions, please reach out at maria.garcia@gmail.com.
+
+Best regards,
+[Your Practice Name]
+
+Note: LLM responses vary between runs. Real PII appears in the output even
+though the LLM only ever saw tokenized placeholders.

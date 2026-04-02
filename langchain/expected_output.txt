@@ -1,0 +1,19 @@
+$ python main.py
+
+Support Ticket Summary:
+- Customer: Alice Johnson
+- Email: alice.j@techcorp.com
+- SSN: 234-56-7890
+- Issue: Unauthorized charges on card 4111-1111-1111-1111
+- Action needed: Investigate and reverse unauthorized transactions
+
+--- With a chain ---
+
+Account lookup for Bob Williams:
+- Email: bob.w@example.com
+- SSN: 876-54-3210
+- Phone: 312-555-0199
+
+Note: LLM responses vary between runs. Real PII appears in the output even
+though the LLM only ever saw tokenized placeholders. Both direct invocation
+and LangChain chains work identically through NoPII.
