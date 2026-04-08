@@ -21,11 +21,10 @@ import os
 import uuid
 
 from dotenv import load_dotenv
+from langfuse import Langfuse, observe
 from openai import OpenAI
 
-from langfuse import Langfuse, observe
-
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", ".env"))
 
 client = OpenAI(
     api_key=os.environ["OPENAI_API_KEY"],

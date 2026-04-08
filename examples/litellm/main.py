@@ -11,11 +11,10 @@ different client patterns for each provider.
 
 import os
 
+import litellm
 from dotenv import load_dotenv
 
-import litellm
-
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", ".env"))
 
 NOPII_BASE_URL = os.environ.get("NOPII_BASE_URL", "https://api.nopii.co")
 

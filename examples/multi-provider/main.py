@@ -12,7 +12,7 @@ import anthropic
 from dotenv import load_dotenv
 from openai import OpenAI
 
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", ".env"))
 
 NOPII_BASE_URL = os.environ.get("NOPII_BASE_URL", "https://api.nopii.co")
 

@@ -11,7 +11,7 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", ".env"))
 
 # The only change: point base_url at NoPII
 client = OpenAI(

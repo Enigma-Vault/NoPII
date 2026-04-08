@@ -13,7 +13,7 @@ import os
 import anthropic
 from dotenv import load_dotenv
 
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", ".env"))
 
 nopii_base = os.environ.get("NOPII_BASE_URL", "https://api.nopii.co")
 client = anthropic.Anthropic(

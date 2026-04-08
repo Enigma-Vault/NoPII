@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install ruff
-          for req in */requirements.txt; do
+          for req in examples/*/requirements.txt; do
             pip install -r "$req"
           done
 
@@ -38,9 +38,9 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        working-directory: openai-chat-node
+        working-directory: examples/openai-chat-node
         run: npm install
 
       - name: Check syntax
-        working-directory: openai-chat-node
+        working-directory: examples/openai-chat-node
         run: npx tsc --noEmit

@@ -18,7 +18,7 @@ Any LLM provider that exposes an OpenAI-compatible API works with NoPII via `bas
 
 ## Anthropic note
 
-Anthropic's SDK works with the same base URL. See the [anthropic-chat](../anthropic-chat) example.
+Anthropic's SDK works with the same base URL. See the [anthropic-chat](../examples/anthropic-chat) example.
 
 ```python
 nopii_base = os.environ.get("NOPII_BASE_URL", "https://api.nopii.co")

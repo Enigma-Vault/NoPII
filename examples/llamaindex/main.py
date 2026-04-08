@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 from llama_index.core.llms import ChatMessage
 from llama_index.llms.openai import OpenAI
 
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", ".env"))
 
 # Point LlamaIndex at NoPII
 llm = OpenAI(

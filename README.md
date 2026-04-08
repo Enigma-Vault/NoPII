@@ -1,6 +1,6 @@
-# NoPII Examples
+# NoPII
 
-[![CI](https://github.com/Enigma-Vault/nopii-examples/actions/workflows/ci.yml/badge.svg)](https://github.com/Enigma-Vault/nopii-examples/actions/workflows/ci.yml)
+[![CI](https://github.com/Enigma-Vault/NoPII/actions/workflows/ci.yml/badge.svg)](https://github.com/Enigma-Vault/NoPII/actions/workflows/ci.yml)
 
 **PII-tokenizing proxy for LLM APIs. One line of code. Zero middleware.**
 
@@ -68,7 +68,7 @@ ANTHROPIC_API_KEY=sk-ant-...
 **Python:**
 
 ```bash
-cd openai-chat
+cd examples/openai-chat
 pip install -r requirements.txt
 python main.py
 ```
@@ -76,7 +76,7 @@ python main.py
 **Node.js/TypeScript:**
 
 ```bash
-cd openai-chat-node
+cd examples/openai-chat-node
 npm install
 npm start
 ```
@@ -87,21 +87,21 @@ npm start
 
 | Example | Provider | What it demonstrates |
 |---------|----------|----------------------|
-| [openai-chat](./openai-chat) | OpenAI | Basic chat completion with PII protection |
-| [openai-streaming](./openai-streaming) | OpenAI | Streaming with credential and secret detection |
-| [anthropic-chat](./anthropic-chat) | Anthropic | Chat completion via NoPII's Anthropic endpoint |
-| [anthropic-streaming](./anthropic-streaming) | Anthropic | Streaming with API key and token detection |
-| [multi-turn](./multi-turn) | OpenAI | Multi-turn conversation showing deterministic tokenization |
-| [langchain](./langchain) | OpenAI | LangChain integration via `base_url` |
-| [langchain-anthropic](./langchain-anthropic) | Anthropic | LangChain + ChatAnthropic via `anthropic_api_url` |
-| [langgraph](./langgraph) | OpenAI | LangGraph agentic workflow with PII protection across nodes |
-| [llamaindex](./llamaindex) | OpenAI | LlamaIndex integration via `api_base` |
-| [deepseek](./deepseek) | DeepSeek | DeepSeek via OpenAI-compatible endpoint |
-| [gemini](./gemini) | Google Gemini | Gemini via OpenAI-compatible endpoint |
-| [openai-chat-node](./openai-chat-node) | OpenAI | Node.js/TypeScript chat completion with PII protection |
-| [litellm](./litellm) | Multiple | LiteLLM unified interface — one function, any provider |
-| [langfuse](./langfuse) | OpenAI | Distributed tracing with Langfuse via traceparent header |
-| [multi-provider](./multi-provider) | Multiple | Same PII protection across OpenAI, Anthropic, and DeepSeek |
+| [openai-chat](./examples/openai-chat) | OpenAI | Basic chat completion with PII protection |
+| [openai-streaming](./examples/openai-streaming) | OpenAI | Streaming with credential and secret detection |
+| [anthropic-chat](./examples/anthropic-chat) | Anthropic | Chat completion via NoPII's Anthropic endpoint |
+| [anthropic-streaming](./examples/anthropic-streaming) | Anthropic | Streaming with API key and token detection |
+| [multi-turn](./examples/multi-turn) | OpenAI | Multi-turn conversation showing deterministic tokenization |
+| [langchain](./examples/langchain) | OpenAI | LangChain integration via `base_url` |
+| [langchain-anthropic](./examples/langchain-anthropic) | Anthropic | LangChain + ChatAnthropic via `anthropic_api_url` |
+| [langgraph](./examples/langgraph) | OpenAI | LangGraph agentic workflow with PII protection across nodes |
+| [llamaindex](./examples/llamaindex) | OpenAI | LlamaIndex integration via `api_base` |
+| [deepseek](./examples/deepseek) | DeepSeek | DeepSeek via OpenAI-compatible endpoint |
+| [gemini](./examples/gemini) | Google Gemini | Gemini via OpenAI-compatible endpoint |
+| [openai-chat-node](./examples/openai-chat-node) | OpenAI | Node.js/TypeScript chat completion with PII protection |
+| [litellm](./examples/litellm) | Multiple | LiteLLM unified interface — one function, any provider |
+| [langfuse](./examples/langfuse) | OpenAI | Distributed tracing with Langfuse via traceparent header |
+| [multi-provider](./examples/multi-provider) | Multiple | Same PII protection across OpenAI, Anthropic, and DeepSeek |
 
 ---
 
