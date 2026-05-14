@@ -55,8 +55,8 @@ dev = [
 [project.urls]
 Homepage = "https://www.nopii.co"
 Documentation = "https://docs.nopii.co"
-Repository = "https://github.com/enigma-vault/langchain-nopii-middleware"
-Issues = "https://github.com/enigma-vault/langchain-nopii-middleware/issues"
+Repository = "https://github.com/Enigma-Vault/NoPII/tree/main/integrations/langchain-nopii-middleware"
+Issues = "https://github.com/Enigma-Vault/NoPII/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/langchain_nopii_middleware"]
