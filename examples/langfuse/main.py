@@ -48,7 +48,7 @@ PROMPT = (
 
 @observe(as_type="generation")
 def call_llm(prompt: str) -> str:
-    """Call OpenAI via NoPII, attaching the active Langfuse context as traceparent."""
+    """Call OpenAI through NoPII with the active Langfuse traceparent."""
     # Pull the trace/span IDs Langfuse already started for this @observe context
     # and forward them as the W3C traceparent. NoPII's sanitize/llm-call/desanitize
     # spans then attach as children of this generation span in the same Langfuse trace.
