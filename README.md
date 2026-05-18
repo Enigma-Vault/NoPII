@@ -99,6 +99,7 @@ npm start
 | [vercel-ai-sdk-anthropic](./examples/vercel-ai-sdk-anthropic) | Anthropic | Vercel AI SDK + Anthropic via `createAnthropic({ baseURL })` |
 | [litellm](./examples/litellm) | Multiple | LiteLLM unified interface — one function, any provider |
 | [langfuse](./examples/langfuse) | OpenAI | Distributed tracing with Langfuse via traceparent header |
+| [langfuse-anthropic](./examples/langfuse-anthropic) | Anthropic | Distributed tracing with Langfuse + Anthropic via traceparent header |
 | [multi-provider](./examples/multi-provider) | Multiple | Same PII protection across OpenAI, Anthropic, and DeepSeek |
 
 ---

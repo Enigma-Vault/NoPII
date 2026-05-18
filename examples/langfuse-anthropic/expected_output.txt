@@ -1,0 +1,27 @@
+$ python main.py
+
+**Patient Follow-Up Note**
+
+Patient: Maria Garcia
+DOB: 03/15/1985
+Patient ID: 321-54-9876
+Email: maria.garcia@gmail.com
+Visit Date: 2024-01-15
+Visit Type: Routine Checkup
+
+Dear Maria Garcia,
+
+Thank you for coming in for your routine checkup. It was good to see you,
+and I'm pleased to report that your examination went well.
+
+If you have any questions, please contact us at maria.garcia@gmail.com.
+
+Best regards,
+[Provider Name]
+[Medical Practice]
+
+Trace sent to Langfuse — check your dashboard.
+
+Note: LLM responses vary between runs. The key thing: real PII appears in the
+output even though the LLM only ever saw tokenized placeholders. In Langfuse,
+NoPII's trace shows sanitized content — tokens, not real PII.
