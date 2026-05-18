@@ -18,7 +18,6 @@ Prerequisites:
 """
 
 import os
-import uuid
 
 from dotenv import load_dotenv
 from langfuse import Langfuse, observe
@@ -48,8 +47,15 @@ PROMPT = (
 
 
 @observe(as_type="generation")
-def call_llm(prompt: str, traceparent: str) -> str:
-    """Call OpenAI via NoPII with a traceparent header."""
+def call_llm(prompt: str) -> str:
+    """Call OpenAI via NoPII, attaching the active Langfuse context as traceparent."""
+    # Pull the trace/span IDs Langfuse already started for this @observe context
+    # and forward them as the W3C traceparent. NoPII's sanitize/llm-call/desanitize
+    # spans then attach as children of this generation span in the same Langfuse trace.
+    trace_id = langfuse.get_current_trace_id()
+    span_id = langfuse.get_current_observation_id()
+    traceparent = f"00-{trace_id}-{span_id}-01"
+
     response = client.chat.completions.create(
         model="gpt-4o",
         messages=[{"role": "user", "content": prompt}],
@@ -68,12 +74,7 @@ def call_llm(prompt: str, traceparent: str) -> str:
 @observe()
 def customer_lookup(prompt: str) -> str:
     """Application trace that links to NoPII's server-side trace."""
-    # Build a W3C traceparent header to link NoPII's trace to yours
-    trace_id = uuid.uuid4().hex
-    span_id = uuid.uuid4().hex[:16]
-    traceparent = f"00-{trace_id}-{span_id}-01"
-
-    return call_llm(prompt, traceparent)
+    return call_llm(prompt)
 
 
 result = customer_lookup(PROMPT)
