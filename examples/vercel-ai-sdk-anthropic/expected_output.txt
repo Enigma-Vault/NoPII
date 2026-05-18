@@ -1,0 +1,28 @@
+$ npm start
+
+**Patient Follow-Up Note**
+
+Patient: Maria Garcia
+DOB: 03/15/1985
+Patient ID: 321-54-9876
+Email: maria.garcia@gmail.com
+Visit Date: 2024-01-15
+
+Dear Maria Garcia,
+
+Thank you for coming in for your routine checkup. It was good to see you,
+and I'm pleased to report that your examination went well.
+
+As discussed during your visit, please remember to:
+- Continue your current wellness routine
+- Schedule your next routine checkup in 12 months
+- Contact our office if you have any questions or concerns
+
+If you need to reach us, please respond to this email at maria.garcia@gmail.com.
+
+Best regards,
+[Provider Name]
+[Practice Name]
+
+Note: LLM responses vary between runs. Real PII appears in the output even
+though the LLM only ever saw tokenized placeholders.

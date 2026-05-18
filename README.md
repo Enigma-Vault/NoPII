@@ -96,6 +96,7 @@ npm start
 | [gemini](./examples/gemini) | Google Gemini | Gemini via OpenAI-compatible endpoint |
 | [openai-chat-node](./examples/openai-chat-node) | OpenAI | Node.js/TypeScript chat completion with PII protection |
 | [vercel-ai-sdk](./examples/vercel-ai-sdk) | OpenAI | Vercel AI SDK via `createOpenAI({ baseURL })` |
+| [vercel-ai-sdk-anthropic](./examples/vercel-ai-sdk-anthropic) | Anthropic | Vercel AI SDK + Anthropic via `createAnthropic({ baseURL })` |
 | [litellm](./examples/litellm) | Multiple | LiteLLM unified interface — one function, any provider |
 | [langfuse](./examples/langfuse) | OpenAI | Distributed tracing with Langfuse via traceparent header |
 | [multi-provider](./examples/multi-provider) | Multiple | Same PII protection across OpenAI, Anthropic, and DeepSeek |
