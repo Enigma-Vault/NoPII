@@ -1,0 +1,12 @@
+$ npm start
+
+The customer record for John Smith includes the following details:
+
+- SSN: 234-56-7891
+- Email: john.smith@acme.com
+- Phone: 555-867-5309
+
+He called regarding his credit card with the number 4242-4242-4242-4242.
+
+Note: LLM responses vary between runs. Real PII appears in the output even
+though the LLM only ever saw tokenized placeholders.
